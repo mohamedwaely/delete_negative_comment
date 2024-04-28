@@ -29,6 +29,12 @@ client = OpenAI(
     api_key=secret.chatgpt_api_key,
 )
 
+"""
+client = OpenAI()
+    OpenAI.api_key = os.getenv('OPENAI_API_KEY')
+
+"""
+
 logging.basicConfig(filename='youtube.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 negative_comments = []
